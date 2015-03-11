@@ -1,3 +1,4 @@
+setup.cfg
 setup.py
 cilenisapi/__init__.py
 cilenisapi/client.py
