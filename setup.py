@@ -10,6 +10,6 @@ setup(
     author_email="aabilio@gmail.com",
     url="https://github.com/aabilio/python-cilenisapi",
     packages = find_packages(),
-    keywords= "cilenisapi,cilenis",
+    keywords= ["cilenisapi","cilenis"],
     zip_safe = True
 )
