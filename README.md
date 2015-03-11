@@ -146,6 +146,20 @@ except CilenisApiException as e:
 ```
 
 
+Example:
+```python
+>>> conjugations, lang = cilenisApi.conjugate(text=u"palabra", lang="es")
+
+Traceback (most recent call last):
+  File "example-app.py", line 28, in <module>
+    conjugations, lang = cilenisApi.conjugate(text=u"palabra", lang="es")
+  File ".../python-cilenisapi/cilenisapi/client.py", line 97, in wrapped_f
+    return f(self, *args, **kwargs)
+  File ".../python-cilenisapi/cilenisapi/client.py", line 147, in conjugate
+    raise CilenisApiException(msg=unicode(result_json['conjugations'][0]['conjugation'][0]['code_tense']))
+cilenisapi.exceptions.CilenisApiException: palabra no es un verbo en infinitivo
+```
+
 Sample app
 ------
 This repository includes a one-file sample app.
