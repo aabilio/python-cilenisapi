@@ -130,7 +130,7 @@ raw_response = cilenisApi.raw_endpoint( endpoint=u"language_identifier", params=
 
 Error handling
 ------
-Importing the bind module allows handling of specific error status codes. An example is provided below:
+Importing the exceptions module allows handling of specific error status codes. An example is provided below:
 ``` python
 from cilenisapi.exceptions import CilenisApiException, CilenisValidationException
 
@@ -138,9 +138,6 @@ try:
   # your code goes here
 except CilenisValidationException as e:
   print "Validation error %s" % unicode(e)
-
-try:
-  # your code goes here
 except CilenisApiException as e:
   print "API error %s" % unicode(e)
 ```
@@ -163,6 +160,7 @@ cilenisapi.exceptions.CilenisApiException: palabra no es un verbo en infinitivo
 Sample app
 ------
 This repository includes a one-file sample app.
+Fill your cilenisapi credentials.
 
 ``` bash
 python example-app.py

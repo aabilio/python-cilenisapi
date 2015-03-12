@@ -4,8 +4,8 @@
 
 from cilenisapi.client import Cilenis
 
-CILENIS_APP_ID  = u"9f213cd7"
-CILENIS_APP_KEY = u"07095d01f9f67e578094760dde4393e9"
+CILENIS_APP_ID  = u"XXXXXXXX"
+CILENIS_APP_KEY = u"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 example_texts = {
 	"example_url"   : u"http://internacional.elpais.com/internacional/2015/03/11/actualidad/1426093551_815019.html",
