@@ -1,5 +1,5 @@
 
-python-instagram
+python-cilenisapi
 ======
 A Python 2 client for the Cilenisapi REST APIs
 
